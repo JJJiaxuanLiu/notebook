@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "万能网页真实HTML抓取器",
+  "version": "1.0",
+  "description": "绕过防F12检测，完美提取任意网站、弹窗及Iframe内部的真实渲染DOM",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ]
+}
